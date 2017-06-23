@@ -1,0 +1,574 @@
+﻿/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Gorditas');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import url("https://fast.fonts.com/t/1.css?apiType=css&projectid=1ff00cc7-8d7c-4edf-ae4d-8459ff440039");
+ 
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+ 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+:link, :visited {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em;
+}
+
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, legend, input, table, td, th, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+a img, :link img, :visited img {
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+*:focus {
+  outline: 0;
+}
+
+label, button, input[type="submit"], input[type="reset"] {
+  cursor: pointer;
+}
+
+.cf:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.cf {
+  display: inline-block;
+  width: 100%;
+}
+
+html[xmlns] .cf {
+  display: block;
+}
+
+* html .cf {
+  height: 1%;
+}
+
+header, footer, section, article {
+  display: block;
+}
+
+@font-face {
+  font-family: "Gill Sans W01 Book";
+  src: url(/assets/gill_sans_w01_book-87b1694c234e0ee312767645f43f12a587380cbf85dee0628a91885d675e66f1.eot);
+  src: url(/assets/gill_sans_w01_book-87b1694c234e0ee312767645f43f12a587380cbf85dee0628a91885d675e66f1.eot?#iefix) format("embedded-opentype"), url(/assets/gill_sans_w01_book-8c1964c2f5e398e4880efda0aab38fb06dee4f0536200650c7d928b12f0f130f.woff) format("woff"), url(/assets/gill_sans_w01_book-dfbd1681eb432b29168a4e2c835b4e8eb82b88ca823b8593825d9663a281beca.ttf) format("truetype"), url(/assets/gill_sans_w01_book-10ca8faf9029c8aa08eb696b944665fe95e3c7f5d6c7f9fbcb96232e22a5a6e9.svg#e49c440c-7653-44ce-96d2-f775947ba9fe) format("svg");
+}
+
+@font-face {
+  font-family: "Gill Sans W01 Light";
+  src: url(/assets/gill_sans_w01_light-def9fddc19b15530110d50b8256a2537a9775db96b1092ec139dfb64a1ab5fa2.eot);
+  src: url(/assets/gill_sans_w01_light-def9fddc19b15530110d50b8256a2537a9775db96b1092ec139dfb64a1ab5fa2.eot?#iefix) format("embedded-opentype"), url(/assets/gill_sans_w01_light-c83ef7bbb339fb0e31693c8d42fdbd0c8e73f9d953a4c34485f6442b15daeaf6.woff) format("woff"), url(/assets/gill_sans_w01_light-82f805a4b56bacf46d5a65f231bd2006d1540334ec8cb093ae1c72ef3b12d17a.ttf) format("truetype"), url(/assets/gill_sans_w01_light-3b68788ce00a4f3989e392f1619217422c7bc5d14f7ed1db785a68cc6754f14a.svg#d8851d95-478d-47a9-a0b0-a8d8e4ca127a) format("svg");
+}
+
+@font-face {
+  font-family: "Gill Sans W01 Medium";
+  src: url(/assets/gill_sans_w01_medium-be24cbebdddfbfb47191bde6d1d42e8ca32da73c06af69a0fa176a4e580d662b.eot);
+  src: url(/assets/gill_sans_w01_medium-be24cbebdddfbfb47191bde6d1d42e8ca32da73c06af69a0fa176a4e580d662b.eot?#iefix) format("embedded-opentype"), url(/assets/gill_sans_w01_medium-e17bbc0b90ef4342e9fcbaee461fb8cc75ce617d60e5b7bc7a8d4db02e3ebc9c.woff) format("woff"), url(/assets/gill_sans_w01_medium-84dcd3eb32b2b03d93d6c6b034a974ed334bd38d6517acbe7f58d46fbbbaf5d8.ttf) format("truetype"), url(/assets/gill_sans_w01_medium-921f6198d279235a6b8bb33b90d4e086e5fdce34d2ac0ebb5fed87b74d403f50.svg#944cce8d-20bf-41c1-ae29-2bc8199859db) format("svg");
+}
+
+@font-face {
+  font-family: "Gill Sans W01 Bold";
+  src: url(/assets/gill_sans_w01_bold-b8e0412d49d775835c0498929b8834223c5010450bfe18a77bcaa8d57e4d5476.eot);
+  src: url(/assets/gill_sans_w01_bold-b8e0412d49d775835c0498929b8834223c5010450bfe18a77bcaa8d57e4d5476.eot?#iefix) format("embedded-opentype"), url(/assets/gill_sans_w01_bold-108ea31221f78563986197e10bfab3d04bbf84c2128b4b229089f0928246527b.woff) format("woff"), url(/assets/gill_sans_w01_bold-ac1045a43514e310291907012cb647d8b860dc24c3fa64f66a5a1ea696114049.ttf) format("truetype"), url(/assets/gill_sans_w01_bold-531d5021a1bf896ca94894246ac497e9190e69f68a207a64353018c24cf7a8eb.svg#b56150eb-5caa-4385-b907-373e97ddb2ff) format("svg");
+}
+
+@font-face {
+  font-family: "GillSansW01-BoldCondens";
+  src: url(/assets/gill_sans_w01_boldcondens-9b31c423aba0d556cdb167dd37972cf60d12628c5b1d320f37063bd1f73c5846.eot);
+  src: url(/assets/gill_sans_w01_boldcondens-9b31c423aba0d556cdb167dd37972cf60d12628c5b1d320f37063bd1f73c5846.eot?#iefix) format("eot"), url(/assets/gill_sans_w01_boldcondens-615689dc922b38e94a6ec7cbb16fd66814911ca63be98cc694cfd4cdd8ea1c84.woff) format("woff"), url(/assets/gill_sans_w01_boldcondens-934816f0a4ce0f314c1dff971f7af0c794d2d1eedb3f0bd3d386d85c45f200fc.ttf) format("truetype"), url(/assets/gill_sans_w01_boldcondens-f8f3ae645dbd037a3786624c497e997e4dd12349ace1211de1bf07297c529421.svg#36703776-29ac-440e-99c6-477f6d4a8333) format("svg");
+}
+
+@font-face {
+  font-family: "GillSansW01-ExtraBold";
+  src: url(/assets/gill_sans_w01_extrabold-422b6b14f06f8a9e8a2f56c9a2f3eab33c55b4f70e76b4487d1d9a2d7095bb2b.eot);
+  src: url(/assets/gill_sans_w01_extrabold-422b6b14f06f8a9e8a2f56c9a2f3eab33c55b4f70e76b4487d1d9a2d7095bb2b.eot?#iefix) format("embedded-opentype"), url(/assets/gill_sans_w01_extrabold-f75e5a2367c1c9cbe09358276a9811116648b3a6eb1c2921b2bfc2d614c2e07f.woff) format("woff"), url(/assets/gill_sans_w01_extrabold-a988d5a3c9331b68d4c5a80560b275c116ab0717069d2c8a988179320abd133e.ttf) format("truetype"), url(/assets/gill_sans_w01_extrabold-4b233825ae07a7e015357fb88431f8e0439359fc60cb2c540f4a82e10ef6eac1.svg#e73e41fc-119f-4b8b-a5e2-eed9c1f66b21) format("svg");
+}
+
+@font-face {
+  font-family: "GillSansW01-UltraBold";
+  src: url(/assets/gill_sans_w01_ultrabold-77504d2455b464a0919f9d686c3df5d22051b32c5ce3974c0bf1f6639d463fcc.eot);
+  src: url(/assets/gill_sans_w01_ultrabold-77504d2455b464a0919f9d686c3df5d22051b32c5ce3974c0bf1f6639d463fcc.eot?#iefix) format("embedded-opentype"), url(/assets/gill_sans_w01_ultrabold-f342e1d150e961ecd59bcf6af00df539a5fac0833b30a544343eb9ae699eaa72.woff) format("woff"), url(/assets/gill_sans_w01_ultrabold-a9e6b964f9284e485ea5c3eb9374d54116e4cbef5fc15fd787de281415024dfc.ttf) format("truetype"), url(/assets/gill_sans_w01_ultrabold-46d129783030f578193f857f1db772aa254c5ae7f0812670c7654f61e9f2d92e.svg#4d97cb9a-47e3-41d3-b1ea-ac193cd5d6d1) format("svg");
+}
+
+@font-face {
+  font-family: "GillSansW01-DisplayXtra";
+  src: url(/assets/gill_sans_w01_displayxtra-4cd8d6eedbd45a85bf18c20510a3404982cba5c1288f25107b5f83553e5b1447.eot);
+  src: url(/assets/gill_sans_w01_displayxtra-4cd8d6eedbd45a85bf18c20510a3404982cba5c1288f25107b5f83553e5b1447.eot?#iefix) format("embedded-opentype"), url(/assets/gill_sans_w01_displayxtra-69f84517144fadde78ab626529061510edb6eb0943ffc8514f8b55a76ffafec0.woff) format("woff"), url(/assets/gill_sans_w01_displayxtra-e4af7ac2d9bb20d2d2b4089e2600dc88c78905af8227b2dd2362d692b9f3a3e4.ttf) format("truetype"), url(/87fb812b-762f-4712-9846-809dd1898686.svg#87fb812b-762f-4712-9846-809dd1898686) format("svg");
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url(/assets/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot?);
+  src: url(/assets/fontawesome-webfont-e511891d3e01b0b27aed51a219ced5119e2c3d0460465af8242e9bff4cb61b77.eot?#iefix) format("embedded-opentype"), url(/assets/fontawesome-webfont-199411f659f41aaccb959bacb1b0de30e54f244352a48c6f9894e65ae0f8a9a1.woff) format("woff"), url(/assets/fontawesome-webfont-4d6eb9e9d852a2a6f74e7c428456a2f07fc63a1613d10192d8ed3401d9da5ffa.ttf) format("truetype"), url(/assets/fontawesome-webfont-d5b5636ebb2e124810436200086b74a60dff9e8a8be7f4a1088bf5d3458bc3c8.svg) format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeueW0195Black";
+  src: url(/assets/helvetica_neue_w01_95_black-63b3514a134113639e277c166aec686bf82580983c2c5a960bdbf84ee5953a81.eot?);
+  src: url(/assets/helvetica_neue_w01_95_black-63b3514a134113639e277c166aec686bf82580983c2c5a960bdbf84ee5953a81.eot?#iefix) format("embedded-opentype"), url(/assets/helvetica_neue_w01_95_black-d006412610abf579e0db235a3e5d107e6772aab22b9181e55d746d0e33a58df3.woff) format("woff"), url(/assets/helvetica_neue_w01_95_black-68bc919928268c8d509e96847dc3f596b043b9f8f75729a1524848f34d2b5122.ttf) format("truetype"), url(/assets/helvetica_neue_w01_95_black-188b4d493a3c49dc8f4f9bbdf18e0c0db64443d7c741f5a910a14ce9402d39c7.svg#2e490192-e531-4236-9c55-90daaad4a34e) format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeueW0187HvCn";
+  src: url(/assets/helvetica_neue_w01_87_hv_cn-ccb3e898c8a5b16f7256982cf95628724631187e6c515e8030459b91a2c3c700.eot?#iefix);
+  src: url(/assets/helvetica_neue_w01_87_hv_cn-ccb3e898c8a5b16f7256982cf95628724631187e6c515e8030459b91a2c3c700.eot?#iefix) format("embedded-opentype"), url(/assets/helvetica_neue_w01_87_hv_cn-e1a674f89c71c93cf019cb17390a0fef68171d3c8346ee46204afca2101320a2.woff) format("woff"), url(/assets/helvetica_neue_w01_87_hv_cn-7b31c699b0248b5011aba72ba8a6b8053deaa5407904d51c16b9ce4e16f985be.ttf) format("truetype"), url(/assets/helvetica_neue_w01_87_hv_cn-edf23cbb031ab39c67c94d318234ba25240c1174d30b6b42218f175475a2c949.svg#9d3bb5f2-6932-419e-a56f-382131ffd4b8) format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeueW0197BlackCn";
+  src: url(/assets/helvetica_neue_w01_97_black_cn-64505e79019730b47400037eefd4c78695b979a1918d8d0e8404decd66126889.eot?);
+  src: url(/assets/helvetica_neue_w01_97_black_cn-64505e79019730b47400037eefd4c78695b979a1918d8d0e8404decd66126889.eot?#iefix) format("embedded-opentype"), url(/assets/helvetica_neue_w01_97_black_cn-942b58b817520dfb24cb05888bc61518d0a2ff7b82e282d52a76f6731849ba1d.woff) format("woff"), url(/assets/helvetica_neue_w01_97_black_cn-3441d1ce75b485de112a0a2b9ad7bc4d6c4037a8aee4f8905617ee0b03bd4e77.ttf) format("truetype"), url(/assets/helvetica_neue_w01_97_black_cn-1052feeca2b621af6eff1f747750e7b4acf71a2e8ef98868b8e9f22d31255689.svg#0fd53488-84fc-474e-b665-23a72ffda266) format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeueW01-Thin";
+  src: url(/assets/helvetica_neue_w01_thin-fc629b030aa1af952b38c82dd7d22a7e3bbfe08675805c6412ecbd68174c502a.eot?#iefix);
+  src: url(/assets/helvetica_neue_w01_thin-f776d0dfb485629c7351534355429068fd43071b7613e3d2042986fd5b5bf46c.woff2) format("woff2"), url(/assets/helvetica_neue_w01_thin-dad3b1dcd997cfdbee52209e910a2f9866b7273d4707c8d9eeefad237c9abe65.woff) format("woff"), url(/assets/helvetica_neue_w01_thin-981642ce124dfce1b660a1fdf589c80740fa1f71f14c4bd1b3f648a2b2f129ff.ttf) format("truetype"), url(/assets/helvetica_neue_w01_thin-5bde27337bfd2dc7f6a9a620e28d7997bb696eb48259f689c55476c2325e72a9.svg#2e309b1b-08b8-477f-bc9e-7067cf0af0b3) format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeueW01-85Heav";
+  src: url(/assets/helvetica_neue_w01_85_heav-7a39d50bb9ac0f092e1289d2f0e23befea84abca4842c386f6f14e50838b258b.eot?#iefix);
+  src: url(/assets/helvetica_neue_w01_85_heav-0c637760849980a8af9f60fc205d36ce35b3e7f7a90812fc5e290d83c30535f8.woff2) format("woff2"), url(/assets/helvetica_neue_w01_85_heav-7ecf7a61a5e5c4db8a4dac34f5ddbbebd44f66210fddc656d5ed4436f1a78075.woff) format("woff"), url(/assets/helvetica_neue_w01_85_heav-d60b0e120326c833d4ab317c312881bf6ec84e1e79169688ce6ca2f4eac3d2ee.ttf) format("truetype"), url(/assets/helvetica_neue_w01_85_heav-fa00209270dfba8b913bc82b1a6ca26f655b5f5a8965557aebf2fc5f2e4c0c1a.svg#7a48747c-74f2-49a8-bb65-1c522d4aa618) format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeueW01-45Ligh";
+  src: url(/assets/helvetica_neue_w01_45ligh-6f9a50aa19d0bb43667f6df34489ab5f30406cc79f84ec2c50ca660bc45aa129.eot?#iefix);
+  src: url(/assets/helvetica_neue_w01_45ligh-128a909ddb72977f4447788b64f3b542fb71c1bec626cd39256be40cf7f8d527.woff2) format("woff2"), url(/assets/helvetica_neue_w01_45ligh-d1b128b68f8f74340178fd78ff706390c456f7d299920c02198a4d7079c55e99.woff) format("woff"), url(/assets/helvetica_neue_w01_45ligh-c0d3a0ca324f3b065ccd1168d51df3664e7298ff720febac844151dd81dab286.ttf) format("truetype"), url(/assets/helvetica_neue_w01_45ligh-17f24fd955aade9a9211e5d32d6e5ff94e342ab5d541b44b39382802d3a8025b.svg#7816f72f-f47e-4715-8cd7-960e3723846a) format("svg");
+}
+
+@font-face {
+  font-family: "HelveticaNeueW01-55Roma";
+  src: url(/assets/helvetica_neue_w01_55roma-ac8cd4a070a7ed6575a319d8e427266baf84c610e871070d0a4ad41d0b1db5f3.eot?#iefix);
+  src: url(/assets/helvetica_neue_w01_55roma-562ad3d96d6e027d80df3e123943691a950001e4b538365e6e86068eaca2ee09.woff2) format("woff2"), url(/assets/helvetica_neue_w01_55roma-2fa8764cd6080edbfa344bfbaea9b6ee87f5dff6b80cdba2a257e3c6ff3e0623.woff) format("woff"), url(/assets/helvetica_neue_w01_55roma-f8dc8152c7659f35aa165be71cfca5f3c563aa33abc23e6f91fb4c92a8436a81.ttf) format("truetype"), url(/assets/helvetica_neue_w01_55roma-19c931beb918b2e79acb83f45c31060ee4a4b0914cdf459623d8c5495011e1f3.svg#da09f1f1-062a-45af-86e1-2bbdb3dd94f9) format("svg");
+}
+
+* {
+  /*font-family: Helvetica, Arial, sans-serif; */
+  font: 25px/25px "Gorditas,cursive";
+  font-family: 'Gorditas', cursive;
+  text-align:center;
+   
+}
+
+@-ms-viewport {
+  width: 1020px;
+}
+
+#flash div {
+  position: relative;
+  height: 105px;
+  padding: 22px 85px 0 405px;
+  overflow: hidden;
+  background: #7c441c url(/assets/flash.notice-cc2f6852f4825921fadefcaf6d7dd3c65ab96f413d8e15299c39e663af18252e.png) no-repeat 61px 17px;
+  text-align: left;
+}
+
+#flash div h2 {
+  position: absolute;
+  left: 113px;
+  top: 20px;
+  font: 45px/45px "GillSansW01-ExtraBold",Helvetica,sans-serif;
+  color: #f0c982;
+  text-transform: uppercase;
+}
+
+#flash div p, #flash div a {
+  font: 20px/20px "Gill Sans W01 Book",Helvetica,sans-serif;
+  color: #f0c982;
+}
+
+#flash div a.close {
+  display: block;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  margin-top: -13px;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+}
+
+#flash div a.close i {
+  font-size: 30px;
+  line-height: 30px;
+  color: #f0c982;
+}
+
+#flash div.success {
+  background: #216b9a url(/assets/flash.success-6925c97fbe00b34c05ac11b95eb25df01830013534da8a8608450523352eb1e9.png) no-repeat 55px 17px;
+}
+
+#flash div.success h2 {
+  color: #74b8e2;
+}
+
+#flash div.success p {
+  color: #74b8e2;
+}
+
+#flash div.success a.close i {
+  color: #74b8e2;
+}
+
+#flash div.error {
+  background: #ec4224 url(/assets/flash.error-0ccec1ad9c7f1ae605480ecdac13140ed6860bac3c999e568e0d384a8a62b0a4.png) no-repeat 50px 17px;
+  border-bottom-color: #ffedcd;
+}
+
+#flash div.error h2 {
+  color: #fddea5;
+}
+
+#flash div.error p {
+  color: #fddea5;
+}
+
+#flash div.error a.close i {
+  color: #fddea5;
+}
+
+#error_explanation {
+  color: #1f6a99;
+  margin: 5px 0;
+}
+
+#error_explanation ul {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  #flash div {
+    background-image: url(/assets/flash.notice@2x-38a0ca9c4b8f45e7f36e3fcc82a757afe6901449e6d0791f1978e16f82f877be.png);
+    background-size: 42px 50px;
+  }
+  #flash div.success {
+    background-image: url(/assets/flash.success@2x-265e891214da18bc83550d37a19829e23ac48b4a1e3af6285f08c6fceb3f4970.png);
+    background-size: 53px 50px;
+  }
+  #flash div.error {
+    background-image: url(/assets/flash.error@2x-d07ef6f2241fc95dfc45b0d5998896bb126456c48571f2b322d495f180954c94.png);
+    background-size: 57px 50px;
+  }
+}
+
+@-webkit-keyframes cloudA {
+  0% {
+    left: -138px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes cloudA {
+  0% {
+    left: -138px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes cloudB {
+  0% {
+    left: -193px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes cloudB {
+  0% {
+    left: -193px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes cloudC {
+  0% {
+    left: -191px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes cloudC {
+  0% {
+    left: -191px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+html,
+body {
+  min-height: 100%;
+  min-width: 1020px;
+}
+
+body {
+  position: relative;
+  background: #84ac7f;
+}
+
+#wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+  padding-bottom: 300px;
+  background-color: #ffffff;
+  background-repeat: repeat-x;
+}
+
+#login {
+  position: relative;
+  width: 550px;
+  margin: 0 auto;
+  padding-top: 42px;
+}
+
+#login h1 {
+  height: 309px;
+  width: 666px;
+  margin: 0 -56px 0 -60px;
+}
+
+#login h1 a {
+  display: block;
+  height: 309px;
+  width: 666px;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  background-image: url(/images/header.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#login h2 {
+  margin: -15px 0 15px 0;
+  text-align: center;
+  /*font: 60px/60px "Gill Sans W01 Bold", Helvetica, Arial, sans-serif;*/
+  font: 80px/80px "Gorditas,cursive";
+  font-family: 'Gorditas', cursive;
+  color: #5293cc;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+#login form#new_child .input {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+#login form#new_child .input input {
+  box-sizing: border-box;
+  height: 75px;
+  width: 100%;
+  padding: 20px 20px 20px 70px;
+  background: #fdecce;
+  border: none;
+  border-radius: 10px;
+ /* font: 35px/35px "Gill Sans W01 Book", Helvetica, Arial, sans-serif;  */
+  font: 20px/20px "Gorditas,cursive";
+  font-family: 'Gorditas', cursive; 
+  /*font-family: 'Raleway', sans-serif;
+font:20px/20px "Raleway"; */
+  color: #ba30ff;
+  margin-top: 10px;
+}
+
+#login form#new_child .input input::-webkit-input-placeholder {
+  color: #ba30ff;
+  text-align:center;
+}
+
+#login form#new_child .input input::-moz-placeholder {
+  color: #ba30ff;
+  text-align:center;
+}
+
+#login form#new_child .input input:-moz-placeholder {
+  color: #ba30ff;
+  text-align:center;
+}
+
+#login form#new_child .input input:-ms-input-placeholder {
+  color: #ba30ff;
+  text-align:center;
+}
+
+#login form#new_child .input i {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  font-size: 35px;
+  line-height: 35px;
+  color: #ff9076;
+}
+
+#login form#new_child .button {
+  margin: 50px 0 25px 0;
+  white-space: nowrap;
+}
+
+#login form#new_child .button button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 50px;
+  /*font: 30px/45px "GillSansW01-ExtraBold", Helvetica, Arial, sans-serif;*/
+  font: 35px/50px "Gorditas,cursive";
+  font-family: 'Gorditas', cursive;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #61fc00;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#login form#new_child .button button:hover {
+  background: #ee532f;
+}
+
+#login form#new_child .button a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px;
+  font: 24px/24px "Gill Sans W01 Bold", Helvetica, Arial, sans-serif;
+  color: #ef9728;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#login form#new_child .button a strong {
+  display: block;
+  font: 36px/36px "GillSansW01-ExtraBold", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+#login form#new_child .button a:hover {
+  color: #f1a240;
+}
+
+header {
+  position: relative;
+  z-index: 0;
+  height: 170px;
+}
+
+header h1 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+header h1 a {
+  display: inline-block;
+  height: 149px;
+  width: 323px;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  background: url(/images/header.png) no-repeat 0 0;
+  background-size: 323px 148px;
+}
+
+header nav {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  position: relative;
+  display: inline-block;
+  top: -35px;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  display: block;
+  width: 125px;
+  padding-top: 105px;
+  text-align: center;
+  font: 14px/14px "GillSansW01-ExtraBold", Helvetica, Arial, sans-serif;
+  color: #b46a28;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+} 
+ 
